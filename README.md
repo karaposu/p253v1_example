@@ -1,7 +1,12 @@
 # p253v1
 
 
-I created a serial communication protocol which allows user to send arbitrary number of integers and floats over serial channel in a such way that once two sides are calibrated by a simple code line, there is no further need of delimiter based decoding. Advantage over other protocols is P253 utilizes COBS which uses full capacity of a byte. (For example to send integer 255, it is enough to send "1111 1111" (only 1 byte), unlike ASCII base protocols which sends 255 in 3 bytes as : [ “0000 0010“ (2) , “0000 0101” (5), “0000 0101” (5) ] ) Second advantage of P253 is like mentioned above, once chosen how many values will be send and how many of them are 8 bit values and how many of them will be 16 bit values and how many of these 16 bit values will have fractions there is no need for any further code to split and segment the transmitted data from receiving side.
+I created a serial communication protocol which allows user to send arbitrary number of integers and floats over serial channel in a such way that once two sides are calibrated by a simple code line, there is no further need of delimiter based decoding. Advantage over other protocols is P253 utilizes COBS which uses full capacity of a byte. 
+
+For example to send integer 255, it is enough to send "1111 1111" (only 1 byte), unlike ASCII base protocols which sends 255 in 3 bytes as : 
+[ “0000 0010“ (2) , “0000 0101” (5), “0000 0101” (5) ] 
+
+Second advantage of P253 is like mentioned above, once chosen how many values will be send and how many of them are 8 bit values and how many of them will be 16 bit values and how many of these 16 bit values will have fractions there is no need for any further code to split and segment the transmitted data from receiving side.
 
 	//-This protocol allow us to send a package which contains such data  { 255  -125.65 100 200 -10500 62000 -32125.16 }
 
