@@ -1,6 +1,6 @@
 # p253v1
 
-	//-This protocol allow us to send a package which contains such data =  [255  -125.65 100 200 -10500 62000 -32125.16 ]
+	//-This protocol allow us to send a package which contains such data  { 255  -125.65 100 200 -10500 62000 -32125.16 }
 
 	//-As you see this package contains different 8bit data, fraction data, 16 bit data all together. 
 
@@ -8,9 +8,9 @@
 
 	//-All you need to change is initialization key in receiving side
 
-	//-initialization key is a list of numbers which encodes the type and order  and meaning of each 8bit data in a package
+	//-initialization key is a list of numbers which encodes the type and order and meaning of each 8bit data in a package
 
-	//-Once initialization key is known receiving side will know which value in package correcponds to what. 
+	//-Once initialization key is known, receiving side will know which value in package correcponds to what. 
 
 	//-Packages send via COBS
 
