@@ -1,6 +1,6 @@
 # p253v1
 
-# This project is from 2017 and currently unmaintened. I want to benchmark it with common communication protocols. But there are so many new things I am interested in...
+# This project is from 2018 and currently unmaintened. I want to benchmark it with common communication protocols. But there are so many new things I am interested in...
 
 I created a serial communication protocol which allows user to send arbitrary number of integers and floats over serial channel in a such way that once two sides are calibrated by a simple code line, there is no further need of delimiter based decoding. Advantage over other protocols is P253 utilizes COBS which uses full capacity of a byte. 
 
